@@ -1,15 +1,16 @@
 import React from 'react';
 import './Products.css'
+import Product from '../Product/Product';
+
 
 import products1 from '../../../images/products/widget1.png';
-import products2 from '../../../images/products/widget2.jpg';
-import products3 from '../../../images/products/widget3.jpg';
-import products4 from '../../../images/products/widget4.jpg';
-import products5 from '../../../images/products/widget5.jpg';
-import products6 from '../../../images/products/widget6.jpg';
-import products7 from '../../../images/products/widget7.jpg';
-import products8 from '../../../images/products/widget8.jpg';
-import Product from '../Product/Product';
+import products2 from '../../../images/products/widget2.png';
+import products3 from '../../../images/products/widget3.png';
+import products4 from '../../../images/products/widget4.png';
+import products5 from '../../../images/products/widget5.png';
+import products6 from '../../../images/products/widget6.png';
+import products7 from '../../../images/products/widget7.png';
+import products8 from '../../../images/products/widget8.png';
 
 const products = [
     {id: 1, name:'Propel Advanced SL 0', price:'$900.00', img:products1},
@@ -29,12 +30,14 @@ const Products = () => {
     return (
         <div>
             <h2 className='products-title'>WIDGET PRODUCTS</h2>
-            {
-                products.map(product => <Product
-                key={product.id}
-                product= {product}
-                ></Product>)
-            }
+            <div className='products-continer'>
+                {
+                    products.map(product => <Product
+                    key={product.id}
+                    product= {product}
+                    ></Product>)
+                }
+            </div>
         </div>
     );
 };

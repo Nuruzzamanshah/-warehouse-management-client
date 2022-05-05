@@ -4,3 +4,9 @@
     color: aqua;
     font-style: italic;
 }
+.products-continer{
+    background: linear-gradient(110deg, #f1dea4 60%, #f0ecc8 60%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
