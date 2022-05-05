@@ -3,7 +3,7 @@ export const sliderItems = [
       id: 1,
       img: "https://i.ibb.co/vcnLMQk/slider1.png",
       title: "Road Bike",
-      desc: "Road bikes are best identified by their drop or turned-down handlebars and skinny tires. The downward-curving handlebars are usually super lightweight that help put you in an aerodynamic position.",
+      desc: "Road bikes are best identified by their drop or turned-down handlebars and skinny tires. The downward-curving handlebars are usually.",
       bg: "f5fafd",
     },
     {
