@@ -1,0 +1,14 @@
+.categories-title{
+    text-align: center;
+    margin-top: 50px;
+    color: aqua;
+}
+img{
+    width: auto;
+    height: 200px;
+}
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}

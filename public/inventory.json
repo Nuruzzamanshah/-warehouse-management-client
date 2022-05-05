@@ -4,41 +4,53 @@
         "name": "Huffy Brawn Dual",
         "price": "$319.00",
         "description": "Huffy Suspension Alloy 27Inch Bike-in-Box 700",
-        "img": "https://i.ibb.co/0XnR0hm/R2685724-30.jpg"
+        "img": "https://i.ibb.co/0XnR0hm/R2685724-30.jpg",
+        "quantity": 10,
+        "supplier":"John"
     },
     {
         "id": 2,
         "name": "Milazo",
         "price": "$169.00",
         "description": "Milazo 24 Inch Bike-in-a-Box 713 Cerulean.",
-        "img": "https://i.ibb.co/YtG6yfD/bikes3.jpg"
+        "img": "https://i.ibb.co/YtG6yfD/bikes3.jpg",
+        "quantity": 8,
+        "supplier":"Mary"
     },
     {
         "id": 3,
         "name": "Connondale",
         "price": "$229.00",
         "description": "Connondale 26 Inch Bike-in-a-Box 730.",
-        "img": "https://i.ibb.co/PmrN80X/bikes7.jpg"
+        "img": "https://i.ibb.co/PmrN80X/bikes7.jpg",
+        "quantity": 12,
+        "supplier":"Patricia"
     },
     {
         "id": 4,
         "name": "Kona Bikes",
         "price": "$269.00",
         "description": "Kona Bikes Nighthawk 24 Inch Bike-in-a-Box 702.",
-        "img": "https://i.ibb.co/kK262kV/bikes4.jpg"
+        "img": "https://i.ibb.co/kK262kV/bikes4.jpg",
+        "quantity": 15,
+        "supplier":"Jennifer"
     },
     {
         "id": 5,
         "name": "Colnago",
         "price": "$249.00",
         "description": "Huffy Nighthawk 27.5inch Men's Bike 731.",
-        "img": "https://i.ibb.co/D85xchM/bikes5.jpg"
+        "img": "https://i.ibb.co/D85xchM/bikes5.jpg",
+        "quantity": 7,
+        "supplier":"Robert"
     },
     {
         "id": 6,
         "name": "Bianchi",
         "price": "$239.00",
         "description": "Milazo Bike-in-a-Box 719 Charcoal 29 inch.",
-        "img": "https://i.ibb.co/28TydxK/bikes8.jpg"
+        "img": "https://i.ibb.co/28TydxK/bikes8.jpg",
+        "quantity": 11,
+        "supplier":"James"
     }
 ]
