@@ -1,0 +1,10 @@
+.inventory-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    /* margin: 20px 20px; */
+    /* text-align: center; */
+}
+.inventory-title{
+    text-align: center;
+}

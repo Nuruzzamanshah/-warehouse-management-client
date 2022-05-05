@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Inventor from '../Inventor/Inventor';
+import './Inventory.css'
 
 const Inventory = () => {
     const [inventory, setInventory] = useState([]);
@@ -11,15 +12,17 @@ const Inventory = () => {
     },[])
     return (
         <div>
-            <h2>Inventory:{inventory.length}</h2>
-            {
-               inventory.map(inventor => <Inventor
-                key={inventor.id}
-                inventor={inventor}
-               >
+            <h2 className='inventory-title'>Our Inventory Item</h2>
+            <div className='inventory-container'>
+                {
+                inventory.map(inventor => <Inventor
+                    key={inventor.id}
+                    inventor={inventor}
+                >
 
-               </Inventor>)
-            }
+                </Inventor>)
+                }
+            </div>
         </div>
     );
 };
