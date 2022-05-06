@@ -82,7 +82,7 @@ const Header = () => {
                     <MenuItem as={Link} to='/'>HOME</MenuItem>
                     <MenuItem as={Link} to='about'>ABOUT</MenuItem>
                     <MenuItem>REGISTER</MenuItem>
-                    <MenuItem as={Link} to='sign in'>SIGN IN</MenuItem>
+                    <MenuItem as={Link} to='login'>LOGIN</MenuItem>
                     <MenuItem>
                     <Badge badgeContent={4} color="secondary">
                     <ShoppingCartOutlined />
