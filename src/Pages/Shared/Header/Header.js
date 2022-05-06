@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import './Header.css'
 import { mobile } from '../../../responsive';
+import { Link } from 'react-router-dom';
 
 
 const Container = styled.div`
@@ -59,6 +60,7 @@ const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left:25px ;
+    text-decoration: none;
     ${mobile({ fontSize: "12px", marginLeft: '10px' })}
 `
 
@@ -75,13 +77,12 @@ const Header = () => {
                 </Left>
                 <Center>
                 <LockOutlined></LockOutlined>
-                    {/* <Logo>N<Span>u</Span>Ru</Logo> */}
                 </Center>
                 <Right>
-                    <MenuItem>HOME</MenuItem>
-                    <MenuItem>ABOUT</MenuItem>
+                    <MenuItem as={Link} to='/'>HOME</MenuItem>
+                    <MenuItem as={Link} to='about'>ABOUT</MenuItem>
                     <MenuItem>REGISTER</MenuItem>
-                    <MenuItem>SIGN IN</MenuItem>
+                    <MenuItem as={Link} to='sign in'>SIGN IN</MenuItem>
                     <MenuItem>
                     <Badge badgeContent={4} color="secondary">
                     <ShoppingCartOutlined />

@@ -1,0 +1,13 @@
+.inventorydetail{
+    text-align: center;
+    text-justify: inter-word;
+    margin-top: 20px;
+    align-items: justify;
+    justify-content: space-between;
+}
+.btnin{
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
