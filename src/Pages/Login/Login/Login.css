@@ -232,3 +232,9 @@ form:after {
   background-position: 0 -135px;
   color: #00aeef;
 }
+
+@media only screen and (max-width: 576px) {
+  .container{
+      width: 400px;
+  }
+}
