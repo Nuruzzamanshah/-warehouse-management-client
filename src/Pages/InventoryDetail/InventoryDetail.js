@@ -7,7 +7,7 @@ const InventoryDetail = () => {
     const {inventoryId} = useParams();
     return (
         <div className='inventorydetail'>
-            <h2>Welcome to detail: {inventoryId }</h2>
+            {/* <h2>Welcome to detail: {inventoryId }</h2> */}
             <img src={inventor} alt=''/>
             <h2>Name: Huffy Brawn Dual</h2>
             <h2>Price: $319.00</h2>

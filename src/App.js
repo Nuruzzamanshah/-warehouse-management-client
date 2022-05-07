@@ -10,6 +10,7 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Register from './Pages/Login/Register/Register'
 import Checkout from './Pages/Checkout/Checkout/Checkout';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import AddItems from './Pages/AddItems/AddItems';
 
 function App() {
   return (
@@ -24,6 +25,12 @@ function App() {
         <Route path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
+          </RequireAuth>
+        }></Route>
+
+        <Route path='/additems' element={
+          <RequireAuth>
+            <AddItems></AddItems>
           </RequireAuth>
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
