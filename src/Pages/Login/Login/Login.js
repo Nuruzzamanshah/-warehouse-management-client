@@ -1,13 +1,17 @@
 import React, { useRef } from 'react';
 import './Login.css'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from './../../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
   const emailRef     = useRef('');
   const passwordRef  = useRef('');
   const navigate     = useNavigate()
+  const location = useLocation();
+
+  let from = location.state?.from?.pathname || "/";
 
   const [
     signInWithEmailAndPassword,
@@ -17,7 +21,8 @@ const Login = () => {
   ] = useSignInWithEmailAndPassword(auth);
 
   if(user){
-    navigate('/');
+    // navigate('/');
+    navigate(from, { replace: true });
   }
 
   const handleSubmit = event => {
@@ -50,6 +55,7 @@ const Login = () => {
                     <a href="#" onClick={handleRegister}>Register</a>
                   </div>
                 </form>
+                <SocialLogin></SocialLogin>
                 
               </section>
             </div>

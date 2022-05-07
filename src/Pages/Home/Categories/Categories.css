@@ -16,8 +16,8 @@ img{
     grid-gap: 10px;
 }
 
-
-@media only screen and (max-width: 576px) {
+/* Media Query For different screens */
+@media only screen and (max-width: 576px) { 
     .categories-container{
         grid-template-columns: repeat(1, 1fr);
     }

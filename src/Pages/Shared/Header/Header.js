@@ -5,6 +5,9 @@ import styled from 'styled-components';
 import './Header.css'
 import { mobile } from '../../../responsive';
 import { Link } from 'react-router-dom';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from './../../../firebase.init';
+import {signOut} from 'firebase/auth'
 
 
 const Container = styled.div`
@@ -65,6 +68,11 @@ const MenuItem = styled.div`
 `
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () =>{
+        signOut(auth);
+    }
     return (
         <Container>
             <Wrapper>
@@ -82,7 +90,13 @@ const Header = () => {
                     <MenuItem as={Link} to='/'>HOME</MenuItem>
                     <MenuItem as={Link} to='about'>ABOUT</MenuItem>
                     <MenuItem>REGISTER</MenuItem>
-                    <MenuItem as={Link} to='login'>LOGIN</MenuItem>
+                    {
+                        user ?
+                        <button onClick={handleSignOut}>Sign Out</button>
+
+                        :
+                        <MenuItem as={Link} to='login'>LOGIN</MenuItem>
+                    }
                     <MenuItem>
                     <Badge badgeContent={4} color="secondary">
                     <ShoppingCartOutlined />
