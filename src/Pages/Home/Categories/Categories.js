@@ -10,12 +10,12 @@ import Categorie from '../Categorie/Categorie';
 
 
 const categories = [
-    {id: 1, name: 'boom', img:categorie1 },
-    {id: 2, name: 'boom', img:categorie2 },
-    {id: 3, name: 'boom', img:categorie3 },
-    {id: 4, name: 'boom', img:categorie4 },
-    {id: 5, name: 'boom', img:categorie5 },
-    {id: 6, name: 'boom', img:categorie6 },
+    {id: 1, name: 'Alan Bike', img:categorie1 },
+    {id: 2, name: 'Breezer', img:categorie2 },
+    {id: 3, name: 'British Eagle', img:categorie3 },
+    {id: 4, name: 'Brompton', img:categorie4 },
+    {id: 5, name: 'Cielo', img:categorie5 },
+    {id: 6, name: 'Colnago', img:categorie6 },
 ]
 const Categories = () => {
     return (

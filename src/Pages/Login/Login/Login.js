@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Login.css'
 import { useNavigate, useLocation } from 'react-router-dom';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from './../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -22,16 +22,15 @@ const Login = () => {
     error,
   ] = useSignInWithEmailAndPassword(auth);
 
+  const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
   if(user){
     // navigate('/');
     navigate(from, { replace: true });
   }
 
-  if (error) {
-        
-    errorElement=<div>
-        <p className='text-danger'>Error: {error.message}</p>
-      </div>
+  if (error) {  
+    errorElement=<p className='text-danger'>Error: {error.message}</p>
   }
 
   const handleSubmit = event => {
@@ -44,6 +43,12 @@ const Login = () => {
 
   const handleRegister = event =>{
     navigate('/register')
+  }
+
+  const lostPassword = async() =>{
+    const email    = emailRef.current.value;
+    await sendPasswordResetEmail(email);
+          alert('Sent email');
   }
     return (
         <div>
@@ -60,7 +65,7 @@ const Login = () => {
                   </div>
                   <div>
                     <input type="submit" value="Login" />
-                    <a href="#">Lost your password?</a>
+                    <a href="#" onClick={lostPassword}>Lost your password?</a>
                     <a href="#" onClick={handleRegister}>Register</a>
                   </div>
                 </form>
