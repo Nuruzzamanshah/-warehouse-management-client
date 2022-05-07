@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Inventor.css'
 
 const Inventor = ({inventor}) => {
-    const {id,name, img, description, price, quantity, supplier} = inventor;
+    const {_id,name, img, description, price, quantity, supplier} = inventor;
     const navigate = useNavigate();
     const navigateToInventoryDetail = id =>{
         navigate(`/inventory/${id}`)
@@ -16,7 +16,7 @@ const Inventor = ({inventor}) => {
             <p>Quantity: {quantity}</p>
             <p>Supplier Name: {supplier}</p>
             <p>{description}</p>
-            <button className='btnin' onClick={ () => navigateToInventoryDetail(id)}>Update</button>
+            <button className='btnin' onClick={ () => navigateToInventoryDetail(_id)}>Update</button>
             
         </div>
     );

@@ -6,7 +6,7 @@ const Inventory = () => {
     const [inventory, setInventory] = useState([]);
 
     useEffect( ()=>{
-        fetch('inventory.json')
+        fetch('http://localhost:5000/inventory')
         .then(res => res.json())
         .then(data => setInventory(data));
     },[])
@@ -16,7 +16,7 @@ const Inventory = () => {
             <div className='inventory-container'>
                 {
                 inventory.map(inventor => <Inventor
-                    key={inventor.id}
+                    key={inventor._id}
                     inventor={inventor}
                 >
 
