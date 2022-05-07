@@ -89,7 +89,12 @@ const Header = () => {
                 <Right>
                     <MenuItem as={Link} to='/'>HOME</MenuItem>
                     <MenuItem as={Link} to='about'>ABOUT</MenuItem>
-                    <MenuItem>REGISTER</MenuItem>
+                    {
+                        user &&<>
+                            <MenuItem as={Link} to='additems'>AddItems</MenuItem>
+                            <MenuItem as={Link} to='manageitems'>Manageitems</MenuItem>
+                        </>
+                    }
                     {
                         user ?
                         <button onClick={handleSignOut}>Sign Out</button>
