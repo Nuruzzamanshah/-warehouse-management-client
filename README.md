@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# live site link:https://bicycle-warehouse-1aad9.web.app/
 
+#html #css #javascript #react js #firebase hooks #jwt #react from
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
