@@ -12,6 +12,7 @@ import {signOut} from 'firebase/auth'
 
 const Container = styled.div`
     height: 60px;
+    background-color: #023430;
     ${mobile({ height: "50px" })}
 
 `
@@ -32,6 +33,7 @@ const Left = styled.div`
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
+    color: #fff;
     ${mobile({ display: "none" })}
 
 `
@@ -45,6 +47,7 @@ const SearchContainer = styled.div`
 `
 const Input = styled.input`
     border: none;
+    background: none;
     ${mobile({ width: "50px" })}
 
 `
@@ -64,6 +67,7 @@ const MenuItem = styled.div`
     cursor: pointer;
     margin-left:25px ;
     text-decoration: none;
+    color: #fff;
     ${mobile({ fontSize: "12px", marginLeft: '10px' })}
 `
 
@@ -77,14 +81,14 @@ const Header = () => {
         <Container>
             <Wrapper>
                 <Left>
-                    <Language>EN</Language>
+                    <Language>WAREOUSE BICYCLE</Language>
                     <SearchContainer>
                         <Input placeholder='Search'></Input>
                         <Search style={{color: 'gray', fontSize: 1}}></Search>
                     </SearchContainer>
                 </Left>
                 <Center>
-                <LockOutlined></LockOutlined>
+                {/* <LockOutlined></LockOutlined> */}
                 </Center>
                 <Right>
                     <MenuItem as={Link} to='/'>HOME</MenuItem>
@@ -97,7 +101,7 @@ const Header = () => {
                     }
                     {
                         user ?
-                        <button onClick={handleSignOut}>Sign Out</button>
+                        <button onClick={handleSignOut}>SIGN OUT</button>
 
                         :
                         <MenuItem as={Link} to='login'>LOGIN</MenuItem>

@@ -1,8 +1,12 @@
 .products-title{
-    text-align: center;
     margin-top: 20px;
-    color: aqua;
-    font-style: italic;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 5vmin;
+    color: #004658;
+    -webkit-text-stroke: .03em rgb(56, 71, 71);
+    text-shadow: .05em .05em 0 rgb(18, 21, 21);
+    
 }
 .products-continer{
     background: linear-gradient(110deg, #f1dea4 60%, #f0ecc8 60%);

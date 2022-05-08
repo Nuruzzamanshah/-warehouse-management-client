@@ -3,8 +3,12 @@ body{
 }
 .categories-title{
     text-align: center;
+    font-family: sans-serif;
+    font-size: 5vmin;
+    color: #004658;
+    -webkit-text-stroke: .03em rgb(56, 71, 71);
+    text-shadow: .05em .05em 0 rgb(18, 21, 21);
     margin-top: 50px;
-    color: aqua;
 }
 img{
     width: auto;

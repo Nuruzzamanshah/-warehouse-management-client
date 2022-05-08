@@ -20,7 +20,7 @@ const categories = [
 const Categories = () => {
     return (
         <div>
-            <h2 className='categories-title'>Categories</h2>
+            <h2 className='categories-title'>&mdash;Categories</h2>
             <div className='categories-container'>
                 {
                     categories.map(categorie => <Categorie

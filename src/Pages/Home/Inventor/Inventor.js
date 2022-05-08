@@ -11,12 +11,14 @@ const Inventor = ({inventor}) => {
     return (
         <div className='inventor-container'>
             <img src={img} alt=''/>
-            <h2>Name: {name}</h2>
-            <p>Price: {price}</p>
-            <p>Quantity: {quantity}</p>
-            <p>Supplier Name: {supplier}</p>
-            <p>{description}</p>
-            <button className='btnin' onClick={ () => navigateToInventoryDetail(_id)}>Update</button>
+            <div className='inventor-title'>
+                <p>Name: {name}</p>
+                <p>Price: {price}</p>
+                <p>Quantity: {quantity}</p>
+                <p>Supplier Name: {supplier}</p>
+                <p>{description}</p>
+            </div>
+            <button className='btn' onClick={ () => navigateToInventoryDetail(_id)}>Update</button>
             
         </div>
     );

@@ -29,7 +29,7 @@ const products = [
 const Products = () => {
     return (
         <div>
-            <h2 className='products-title'>WIDGET PRODUCTS</h2>
+            <h2 className='products-title'>&mdash;Widget Products</h2>
             <div className='products-continer'>
                 {
                     products.map(product => <Product

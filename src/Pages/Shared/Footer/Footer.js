@@ -4,7 +4,6 @@ import './Footer.css'
 const Footer = () => {
     return (
         <footer>
-            {/* <h2>copyright warehouse</h2> */}
             <div className="pg-footer">
     <footer className="footer">
       <svg className="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
